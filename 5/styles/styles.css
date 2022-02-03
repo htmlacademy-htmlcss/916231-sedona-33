@@ -17,7 +17,7 @@
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 1.18;
   color: #333333;
   background-color: #ffffff;
 }
@@ -25,7 +25,7 @@ body {
 .button {
   font-family: inherit;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 1.8;
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
@@ -54,9 +54,10 @@ body {
 }
 
 .intro {
-  background-image: url("../images/index-bg.jpg");
-  background-size: 100% 100%;
+  background-image: url("../images/edge.svg"), url("../images/index-bg.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto, cover;
+  background-position: bottom center, top center;
   text-align: center;
 }
 
@@ -68,12 +69,17 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: #000000;
-  line-height: 36px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
 .advantages-text {
-  line-height: 36px;
+  line-height: 1.2;
+}
+
+.advantages-item {
+  font-size: 18px;
+  line-height: 1.16;
 }
 
 .advantages-item:nth-child(3) {
@@ -92,19 +98,8 @@ body {
 .advantages-title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-}
-
-.advantages-number {
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.advantages-description {
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .advantages-description-white {
@@ -123,14 +118,8 @@ body {
 .advice-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-}
-
-.advice-description {
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .search {
@@ -140,7 +129,7 @@ body {
 .search-title {
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #000000;
 }
@@ -161,20 +150,26 @@ body {
 .subscription-title {
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
 .subscription-input {
+  font-family: inherit;
+  font-size: 18px;
   background: #F2F2F2;
   border: none;
 }
 
 .footer-contacts-phone {
   font-size: 40px;
-  line-height: 40px;
+  line-height: 1;
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-products {
+  line-height: 1.3;
 }
 
 .inner-header {
@@ -188,12 +183,11 @@ body {
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 78px;
+  line-height: 1.6;
 }
 
 .breadcrumbs {
   font-size: 16px;
-  line-height: 21px;
 }
 
 .catalog-filter {
@@ -211,31 +205,35 @@ body {
 
 .catalog-filter-label {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 1.28;
+}
+
+.catalog-filter-input {
+  font-family: inherit;
+  font-size: 18px;
 }
 
 .button-filter {
   font-size: 16px;
-  line-height: 21px;
 }
 
 .button-reset {
   font-size: 18px;
-  line-height: 23px;
   background-color: transparent;
 }
 
 .filter-result-title {
   font-weight: bold;
   font-size: 30px;
-  line-height: 39px;
   text-transform: uppercase;
   color: #000000;
 }
 
 .select {
+  font-family: inherit;
   font-size: 18px;
-  line-height: 23px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .button-view {
@@ -247,7 +245,6 @@ body {
 .product-card-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 31px;
   color: #000000;
 }
 
@@ -257,18 +254,15 @@ body {
 
 .product-card-type {
   font-size: 18px;
-  line-height: 23px;
 }
 
 .product-card-price {
   font-size: 18px;
-  line-height: 23px;
 }
 
 .button-product-more {
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756257;
@@ -276,19 +270,13 @@ body {
 
 .button-product-favorites {
   font-size: 16px;
-  line-height: 21px;
 }
 
 .product-card-raiting {
   font-size: 16px;
-  line-height: 21px;
   text-transform: uppercase;
   background: #F2F2F2;
   border-radius: 4px;
-}
-
-.pagination-show-more {
-  line-height: 26px;
 }
 
 .pagination-link-current {
@@ -296,16 +284,8 @@ body {
   background: #F2F2F2;
 }
 
-.nubmer-cards-text {
+.number-cards {
   font-size: 18px;
-  line-height: 23px;
-}
-
-.nubmer-cards {
-  font-size: 18px;
-  line-height: 23px;
-  border: 2px solid #E6E6E6;
-  border-radius: 4px;
 }
 
 .subscription-catalog {
