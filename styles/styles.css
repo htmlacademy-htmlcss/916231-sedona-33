@@ -55,6 +55,7 @@ body {
 
 .intro {
   background-image: url("../images/edge.svg"), url("../images/index-bg.jpg");
+  background-color: #83B3D3;
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
   background-position: bottom center, top center;
@@ -141,10 +142,11 @@ body {
 .subscription {
   text-align: center;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #83B3D3;
   background-image: url(../images/subscription-bg.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: top center;
 }
 
 .subscription-title {
@@ -175,7 +177,8 @@ body {
 .inner-header {
   background-image: url("../images/catalog/catalog-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-position: top center;
+  background-size: cover;
   color: #ffffff;
   background-color: #83B3D3;
 }
