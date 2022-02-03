@@ -1,0 +1,318 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-user {
+  color: #000000;
+  text-decoration: none;
+}
+
+.button-navigation-user {
+  background-color: #756257;
+}
+
+.intro {
+  background-image: url("../images/index-bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-header {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  line-height: 36px;
+}
+
+.advantages-item:nth-child(3) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(4) {
+  background: rgba(131, 179, 211, 0.2);
+  ;
+}
+
+.advantages-item:nth-child(5) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-number {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-description-white {
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.advantages-description-white .advantages-title {
+  color: #ffffff;
+}
+
+.advice-item:nth-child(odd) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advice-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advice-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search {
+  text-align: center;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-button {
+  background-color: #756257;
+}
+
+.subscription {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url(../images/subscription-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscription-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscription-input {
+  background: #F2F2F2;
+  border: none;
+}
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.inner-header {
+  background-image: url("../images/catalog/catalog-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter {
+  color: #ffffff;
+}
+
+.catalog-filter-group {
+  border: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.catalog-filter-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-filter {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.button-reset {
+  font-size: 18px;
+  line-height: 23px;
+  background-color: transparent;
+}
+
+.filter-result-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-view {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #E6E6E6;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-type {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-product-more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756257;
+}
+
+.button-product-favorites {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.product-card-raiting {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination-show-more {
+  line-height: 26px;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.nubmer-cards-text {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.nubmer-cards {
+  font-size: 18px;
+  line-height: 23px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.subscription-catalog {
+  background: #FFFFFF;
+  color: #333333;
+}
+
+.subscription-catalog .subscription-title {
+  color: #000000;
+}
