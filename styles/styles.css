@@ -574,6 +574,7 @@ body {
 
 .product-card-image {
   display: block;
+  object-fit: contain;
 }
 
 .product-card-type {
