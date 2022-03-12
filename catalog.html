@@ -62,18 +62,24 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-input" type="checkbox" name="pool" checked>Бассейн
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-input" type="checkbox" name="parking" checked>Парковка
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-input" type="checkbox" name="wi-fi">Wi-Fi
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark-checkbox"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -83,20 +89,26 @@
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-input" type="radio" name="type-of-housing" value="hotel"
-                      checked>Гостиница
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel"
+                      checked>
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-input" type="radio" name="type-of-housing" value="motel">Мотель
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="catalog-filter-label">
-                    <input class="catalog-filter-input" type="radio" name="type-of-housing"
-                      value="apartaments">Апартаменты
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing"
+                      value="apartaments">
+                    <span class="control-mark-radio"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -105,10 +117,29 @@
             <fieldset class="catalog-filter-group filter-price">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="price">
-                <input class="catalog-filter-input price-min" type="text" value="0" placeholder="от">
-                <input class="catalog-filter-input price-max" type="text" value="9000" placeholder="до">
+                <div class="range-wrapper-inputs">
+                  <label class="range-label">
+                    <input class="range-input price-min" type="number" value="0" name="min-price">
+                    <span class="range-placeholder">от</span>
+                  </label>
+                  <label class="range-label">
+                    <input class="range-input price-max" type="number" value="9000" name="max-price">
+                    <span class="range-placeholder">до</span>
+                  </label>
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0px; width: 216px">
+                      <button type="button" class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button type="button" class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <input class="catalog-filter-range" type="range" min="0" max="10000" step="100" value="9000">
             </fieldset>
 
             <div class="filter-button-group">
@@ -184,7 +215,7 @@
             <span class="product-card-type">Гостиница</span>
             <span class="product-card-price">От 2000 ₽</span>
             <a class="button  button-product-more" href="#">Подробнее</a>
-            <button class="button button-product-favorites in-favorites" type="button">В избранное</button>
+            <button class="button button-product-favorites in-favorites" type="button">В избранном</button>
             <div class="product-card-raitings">
               <p class="product-card-stars stars-2">
                 <span class="visually-hidden">2 звезды</span>
@@ -246,7 +277,7 @@
 
       <section class="subscription subscription-catalog">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email">Email</label>
           <input class="subscription-input" type="text" id="subscription-email" name="subscription-email"
@@ -306,6 +337,58 @@
         </svg>
       </a>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <header class="modal-header">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <svg class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </header>
+        <section class="modal-content">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="search-form-label" for="date-check-in">Дата заезда:</label>
+            <div class="search-form-field input-check-in">
+              <input class="search-form-input input-date" type="text" id="date-check-in" name="date-check-in"
+                placeholder="Укажите дату" value="27 апреля 2020" required>
+              <span class="search-form-info info-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <label class="search-form-label" for="date-check-in">Дата выезда:</label>
+            <div class="search-form-field input-check-out">
+              <input class="search-form-input input-date" type="text" id="date-check-out" name="date-check-out"
+                placeholder="Укажите дату" value="1 сентября 2021" required>
+              <span class="search-form-info">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <label class="search-form-label" for="number-adults">Взрослые:</label>
+            <div class="search-form-field">
+              <button class="button button-plus"></button>
+              <input class="search-form-input input-number" type="number" id="number-adults" name="number-adults"
+                placeholder="0" value="2" required>
+              <button class="button button-minus"></button>
+            </div>
+            <label class="search-form-label label-children" for="number-children">Дети:
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                <span class="tooltip-text" role="tooltip" и id="tooltip-label">Укажите количество детей, которые будут с
+                  вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </label>
+            <div class="search-form-field">
+              <button class="button button-plus"></button>
+              <input class="search-form-input input-number" type="number" id="number-children" name="number-children"
+                placeholder="0" value="1">
+              <button class="button button-minus"></button>
+            </div>
+            <button class="button button-search-form" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </div>
 </body>
 
