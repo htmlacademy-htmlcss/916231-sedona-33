@@ -280,6 +280,7 @@ img {
   font-size: 18px;
   line-height: 1.16;
   width: 400px;
+  background-color: #83b3d3;
   box-sizing: border-box;
   padding-top: 98px;
   padding-left: 75px;
@@ -352,6 +353,7 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: #ffffff;
 }
 
 .advice-item {
@@ -799,8 +801,7 @@ img {
   margin-right: 15px;
 }
 
-.control:hover .control-mark-checkbox,
-.control:hover .control-mark-radio {
+.control:hover .control-mark-checkbox {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -808,7 +809,8 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.control-input:focus ~ .control-mark-checkbox {
+.control-input:focus ~ .control-mark-checkbox,
+.control-input:focus ~ .control-mark-radio {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83b3d3;
 }
@@ -1074,6 +1076,7 @@ img {
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: transparent;
   padding-left: 16px;
   padding-right: 46px;
 }
@@ -1323,6 +1326,10 @@ img {
   margin-bottom: 10px;
 }
 
+.stars-1 {
+  width: 24px;
+}
+
 .stars-2 {
   width: 48px;
 }
@@ -1333,6 +1340,10 @@ img {
 
 .stars-4 {
   width: 96px;
+}
+
+.stars-5 {
+  width: 120px;
 }
 
 .product-card-raiting {
