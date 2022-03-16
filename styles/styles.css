@@ -1635,7 +1635,7 @@ img {
   padding-left: 50px;
   padding-right: 50px;
   appearance: none;
-  -webkit-appearance: none;
+  -webkit-appearance: textfield;
   text-align: center;
 }
 
